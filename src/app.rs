@@ -325,6 +325,7 @@ fn password_card(
                 .child(
                     div()
                         .text_xs()
+                        .font_family(TITLE_FONT_FAMILY)
                         .font_weight(gpui::FontWeight::SEMIBOLD)
                         .text_color(rgb(theme.primary))
                         .child("GENERATED CREDENTIAL"),
@@ -694,6 +695,7 @@ fn history_card(
 
 fn section_title(title: &str, theme: Theme) -> impl IntoElement {
     div()
+        .font_family(TITLE_FONT_FAMILY)
         .text_xs()
         .font_weight(gpui::FontWeight::SEMIBOLD)
         .text_color(rgb(theme.primary))
@@ -723,6 +725,7 @@ fn control_card(
                 .gap_1()
                 .child(
                     div()
+                        .font_family(TITLE_FONT_FAMILY)
                         .text_sm()
                         .font_weight(gpui::FontWeight::SEMIBOLD)
                         .child(title.to_owned()),
@@ -755,7 +758,12 @@ fn toggle_line(
                 .flex()
                 .flex_col()
                 .gap_1()
-                .child(div().text_sm().child(title.to_owned()))
+                .child(
+                    div()
+                        .font_family(TITLE_FONT_FAMILY)
+                        .text_sm()
+                        .child(title.to_owned()),
+                )
                 .child(
                     div()
                         .text_xs()
