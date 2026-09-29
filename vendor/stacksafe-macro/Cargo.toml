@@ -1,0 +1,15 @@
+[package]
+name = "stacksafe-macro"
+version = "0.1.4"
+edition = "2021"
+license = "Apache-2.0"
+description = "Procedural macro implementation for the stacksafe crate."
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1"
+proc-macro2-diagnostics = "0.11"
+quote = "1"
+syn = { version = "3", features = ["full"] }

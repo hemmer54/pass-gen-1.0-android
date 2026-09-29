@@ -1,0 +1,10 @@
+target/
+__pycache__/
+*.apk
+*.aab
+.gradle/
+.idea/
+.vscode/
+local.properties
+.DS_Store
+Thumbs.db
